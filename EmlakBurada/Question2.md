@@ -182,7 +182,29 @@ Temel bir senaryo düşünün: Yalnızca geliştirme sırasında etkin olması g
 Bu bean geliştirici profiliyle açıklama ekleriz ve yalnızca geliştirme sırasında kapsayıcıda bulunur. Canlıda, geliştirici aktif olmayacak:
 
 ```java
-@Component
+@Configuration
+public class DefaultConfigurations {
+    // Skipped Configurations
+}
+
+
+@Configuration
 @Profile("dev")
-public class DevDatasourceConfig
+public class DevConfigurations {
+    // Skipped Configurations
+}
+
+
+@Configuration
+@Profile("prod")
+public class ProdConfigurations {
+    // Skipped Configurations
+}
 ```
+application.properties
+```aidl
+spring.profiles.active=dev
+```
+
+application-dev.properties
+application-prod.properties
