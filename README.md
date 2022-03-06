@@ -11,3 +11,8 @@ sizler de gerçekleştirin bir uygulama yazın. (İpucu: kendi gateway’inizin 
 sistemde bulunan yani yönlendirmek istediğiniz servislerin controller’ıda olmalıdır ) (40
 Puan)
 Uygulama feign client’lar sayesinde diğer servislere yönlenmelidir.
+
+---
+
+![img.png](img.png)
+
